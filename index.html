@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>itrowsky APIs</title>
+  <link rel="icon" type="image/png" href="pitrowsky.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" 
+    rel="stylesheet" 
+  />
+
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <div id="header-cont-one">
+            <h2>SUPERVISÃO LBR</h2>
+            <div class="menu-btn" id="menu-btn">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+        </div>
+        <div id="header-cont-two"><ul>
+            <li onclick="AtivarHome();"><i class="fa-solid fa-door-open"></i><h2>HOME</h2></li>
+            <li onclick="AtivarEnginesMenu();"><i class="fa-solid fa-wrench"></i><h2>ENGINES</h2></li>
+            <li onclick="AtivarOcMenu()"><i class="fa-solid fa-bell"></i><h2>OCORRÊNCIAS</h2></li>
+            <li onclick="AtivarRdoMenu();"><i class="fa-solid fa-book"></i><h2>DIÁRIO DE OBRA</h2></li>
+        </ul>
+      </div>
+    </header>
+    <div id="body-cont-one" class="home">
+      <div id="cont-one-cards">
+        <div class="cont-one-card" id="card-one-cont-one">
+          <ul>
+            <li><i class="fa-solid fa-door-open"></i><h2>HOME</h2></li>
+            <li><h2>Ao selecionar esse ícone no</h2></li>
+            <li><h2>menu inicial, você irá voltar</h2></li>
+            <li><h2>ao início, ou clique no título</h2></li>
+            <li><h2>presente no cabeçalho</h2></li>
+          </ul>
+        </div>
+        <div onclick="AtivarEnginesMenu();" class="cont-one-card" id="card-two-cont-one">
+          <ul>
+            <li><i class="fa-solid fa-wrench"></i><h2>ENGINES</h2></li>
+            <li><h2>Ao selecionar esse ícone no</h2></li>
+            <li><h2>menu inicial, você pode configurar</h2></li>
+            <li><h2>as ações das ferramentas</h2></li>
+            <li><h2>na parte de ocorrências e RDO</h2></li>
+          </ul>
+        </div>
+        <div onclick="AtivarOcMenu();" class="cont-one-card" id="card-three-cont-one">
+          <li><i class="fa-solid fa-bell"></i><h2>OCORRÊNCIAS</h2></li>
+            <li><h2>Ao selecionar esse ícone no</h2></li>
+            <li><h2>menu inicial, você pode usar</h2></li>
+            <li><h2>ferramentas capazes de reduzir,</h2></li>
+            <li><h2>corrigir ou formatar arquivos</h2></li>
+        </div>
+        <div onclick="AtivarRdoMenu();" class="cont-one-card" id="card-four-cont-one">
+          <li><i class="fa-solid fa-book"></i><h2>DIÁRIO DE OBRA</h2></li>
+            <li><h2>Ao selecionar esse ícone no</h2></li>
+            <li><h2>menu inicial, você poderá adicionar</h2></li>
+            <li><h2>informações, verificar ou remover</h2></li>
+            <li><h2>referente ao Diário de Obra</h2></li>
+        </div>
+      </div>
+    </div>
+    <div id="body-cont-two" class="home">
+      <div class="gen">
+        <h2 class="title"><i class="fa-regular fa-lightbulb"></i>Descubra todas as ferramentas!</h2>
+        <h2>A partir desta API você pode reescrever arquivos, formatar arquivos corretamente,
+          compactar arquivos, corrigir arquivos, manipular ou até buscar informações de arquivos.
+
+          Vou te mostrar agora um passo a passo de como usar ferramenta por ferramenta:
+          <ul>
+            <li>
+              <span class="title-li">Deseja reduzir o tamanho de arquivos Excel?</span>
+              <span class="body-li">Selecione <span class="sel"><i class="fa-solid fa-bell"></i> OCORRÊNCIAS</span> ou <span class="sel"><i class="fa-solid fa-book"></i> DIÁRIO DE OBRA</span>
+                  no menu, clicar em "Selecionar arquivos", selecionar os arquivos que deseja reduzir o tamanho e depois clicar em
+                  "Compactar Arquivos", depois é só esperar e em alguns segundos seu arquivo de 1GB pode virar um arquivo bem menor do que 100MB.
+                  O tempo necessário para que essa ferramenta gere o resultado é cerca de 3 segundos para arquivos de até 50MB,
+                  para arquivos de 1GB, leva cerca de 60 segundos.
+                  <span class="footer-li">Menu > Ocorrências ou Diário de Obra > Selecionar arquivos > Compactar Arquivos</span>
+              </span>
+            </li>
+            <li>
+              <span class="title-li">Quer formatar as planilhas de ocorrência do SAC?</span>
+              <span class="body-li">Basta selecionar no menu <span class="sel"><i class="fa-solid fa-bell"></i> OCORRÊNCIAS</span> presente no menu
+                  clicar em "Selecionar arquivos", selecionar os arquivos que deseja formatar e clicar em "Formatar Arquivos"
+                  Detalhe: O arquivo ainda faz análise de rodovia por rodovia e entrega dentro do próprio arquivo se a Rodovia é
+                  de fato daquela residência.
+                  <span class="footer-li">Menu > Ocorrências > Selecionar Arquivos > Formatar Arquivos</span>
+              </span>
+            </li>
+          </ul>
+        </h2>
+      </div>
+    </div>
+    <div id="body-cont-three" class="desativado">
+      <div class="painel-oc">
+        <div class="body">
+          <div id="c1fv"><a id="c1fvt">Nenhum arquivo selecionado</a></div>
+            <button id="c1fs" type="submit" onclick="document.getElementById('c1fvi').click()">Selecionar arquivos...</button>
+            <input type="file" id="c1fvi" accept=".xls,.xlsx,.xlsm,.xlsb" multiple style="display:none">
+          </div>
+          <div class="limpar">
+            <div class="l">
+              <button onclick="clearInputFiles()">Limpar tudo</button>
+            </div>
+          </div>
+        <div class="buttons desativado">
+          <ul>
+            <i onclick="FecharButtons();" class="fa-solid fa-xmark"></i>
+            <li onclick="Compact();">
+              Compactar Arquivos
+            </li>
+            <li onclick="Formatar();">
+              Formatar Arquivos
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="loading" class="desativado">
+        <div id="ql1"></div>
+        <div id="ql2">Carregando...</div>
+    </div>
+    <div id="body-cont-four" class="desativado">
+      <div class="engine indisponivel">
+        <h2>Esse menu está em manutenção no momento.</h2>
+      </div>
+    </div>
+    <div id="body-cont-five" class="desativado">
+      <div class="RDO indisponivel">
+        <h2>Esse menu está em manutenção no momento.</h2>
+      </div>
+    </div>
+  <script src="src/scripts.js" defer></script>
+</body>
+</html>
