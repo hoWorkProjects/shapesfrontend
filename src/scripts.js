@@ -213,7 +213,7 @@ async function Compact() {
     files.forEach(f => formData.append('arquivos[]', f, f.name));
 
     try {
-        const res = await fetch('http://192.168.1.134:3000/compact', {
+        const res = await fetch('https://32a6a33aaf48.ngrok-free.app/compact', {
             method: 'POST',
             body: formData
         });
@@ -242,7 +242,7 @@ async function Formatar() {
     files.forEach(f => formData.append('arquivos[]', f, f.name));
 
     try {
-        const res = await fetch('http://192.168.1.134:3000/formatar', {
+        const res = await fetch('https://32a6a33aaf48.ngrok-free.app/formatar', {
             method: 'POST',
             body: formData
         });
