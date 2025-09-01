@@ -213,7 +213,7 @@ async function Compact() {
     files.forEach(f => formData.append('arquivos[]', f, f.name));
 
     try {
-        const res = await fetch('https://backendlbr.onrender.com/compact', {
+        const res = await fetch('http://192.168.1.134:3000/compact', {
             method: 'POST',
             body: formData
         });
@@ -242,7 +242,7 @@ async function Formatar() {
     files.forEach(f => formData.append('arquivos[]', f, f.name));
 
     try {
-        const res = await fetch('https://backendlbr.onrender.com/formatar', {
+        const res = await fetch('http://192.168.1.134:3000/formatar', {
             method: 'POST',
             body: formData
         });
