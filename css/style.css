@@ -172,8 +172,7 @@ header {
     padding: 0;
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
-    color: lightblue;
-    text-shadow: 2px 2px 1px black;
+    color: rgb(0, 44, 59);
 }
 
 .cont-one-card li {
@@ -191,7 +190,6 @@ header {
 }
 
 .cont-one-card {
-    background-color: rgb(0, 44, 59);
     display: none;
     align-items: center;
     justify-content: center;
@@ -199,8 +197,7 @@ header {
     position: relative;
     width: 320px;
     height: 320px;
-    border-radius: 10px;
-    border: 2px solid lightblue;
+    border: 1px solid rgb(0, 44, 59);
     box-shadow: 2px 2px 8px black;
     transition: all 0.5s ease;
     transform: translateY(-130%);
@@ -211,8 +208,7 @@ header {
 }
 
 .cont-one-card:hover {
-    background-color: rgba(0, 44, 59, 0.8);
-    border: 2px solid white;
+    background-color: rgb(0, 44, 59);
     cursor: pointer;
 }
 
@@ -227,8 +223,7 @@ header {
 }
 
 .cont-one-card li:nth-child(1) i {
-    color: lightblue;
-    text-shadow: 2px 2px 1px black;
+    color: rgb(0, 44, 59);
     width: 40px;
     height: 40px;
     display: flex;
@@ -290,10 +285,13 @@ header {
 }
 
 #body-cont-two .gen h2 {
+    width: 700px;
+    max-width: 90vw;
     display: flex;
     align-items: center;
     justify-content: left;
     flex-wrap: wrap;
+    line-height: 30px;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -307,13 +305,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     height: 40px;
     margin: 0 0 20px 0;
-    text-shadow: 0 0 5px rgba(173, 216, 230, 0.25), 0 0 15px rgba(173, 216, 230, 0.25);
     font-family: 'Bebas Neue', sans-serif;
-    background-color: rgb(0, 44, 59);
+    border: 1px solid rgb(0, 44, 59);
     color: lightblue;
-    letter-spacing: 0;
+    background-color: rgb(0, 44, 59);
 }
 
 #body-cont-two .gen .title i {
@@ -322,20 +320,21 @@ header {
     justify-content: center;
     width: 40px;
     height: 40px;
-    animation: lamp 2s ease 1s forwards;
 }
 
 #body-cont-two .gen li .title-li {
     height: 35px;
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
-    letter-spacing: 0;
     display: flex;
     align-items: center;
     justify-content: left;
+    flex-wrap: wrap;
     margin: 20px 0;
     padding: 0 20px;
-    width: 700px;
+    flex: 1 1 auto;
+    max-width: 660px;
+    border: 1px solid rgb(0, 44, 59);
     background-color: rgb(0, 44, 59);
     color: lightblue;
 }
@@ -349,41 +348,26 @@ header {
     font-size: medium;
     font-weight: 400;
     margin: 20px 0 40px 0;
-    background-color: rgb(0, 72, 99);
-    color: lightblue;
-    letter-spacing: 0;
+    max-width: 90vw;
+    border: 1px solid rgb(0, 44, 59);
+    color: rgb(0, 44, 59);
 }
 
 #body-cont-two .gen li .body-li .sel {
-    padding: 4px 15px;
-    letter-spacing: 0;
+    padding: 0 15px;
     margin: 0;
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
     font-size: medium;
-    flex-wrap: nowrap;
     color: lightblue;
     background-color: rgb(0, 72, 99);
+    display: inline-block;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 
 #body-cont-two .gen li .body-li .sel i {
     margin: 0 10px 0 0;
-}
-
-@keyframes lamp {
-    0% {
-        text-shadow: 0 0 0 rgba(173, 216, 230, 0.5), 0 0 0 rgba(173, 216, 230, 0.5);
-    } 25% {
-        text-shadow: 0 0 5px rgba(173, 216, 230, 0.2), 0 0 15px rgba(173, 216, 230, 0.2);
-    } 50% {
-        text-shadow: 0 0 0 rgba(173, 216, 230), 0 0 0 rgba(173, 216, 230);
-    } 75% {
-        text-shadow: 0 0 5px rgba(173, 216, 230, 0.4), 0 0 15px rgba(173, 216, 230, 0.4);
-    } 85% {
-        text-shadow: 0 0 0 rgba(173, 216, 230, 0.5), 0 0 0 rgba(173, 216, 230, 0.5);
-    } 100% {
-        text-shadow: 0 0 5px rgba(173, 216, 230, 0.5), 0 0 15px rgba(173, 216, 230, 0.5);
-    }
 }
 
 @keyframes aparecerCima {
@@ -469,7 +453,7 @@ header {
 #c1fs:hover {
     cursor: pointer;
     color: white;
-    background-color: rgb(0, 72, 99);
+    background-color: rgb(0, 44, 59);
 }
 
 .c1fvdocument {
@@ -547,7 +531,7 @@ header {
     animation: loading 1.5s ease infinite;
 }
 #ql2 {
-    background-color: rgb(0, 44, 59);
+    background-color: rgb(0, 72, 99);
     box-shadow: 0 0 5px black;
 }
 
@@ -589,11 +573,22 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
     color: rgb(0, 44, 59);
-    margin: 40px 0;
+    margin: 20px;
+}
+
+#body-cont-three .painel-oc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 90vw;
 }
 
 #body-cont-three .painel-oc .buttons {
@@ -634,6 +629,7 @@ header {
 #body-cont-three .painel-oc .buttons ul {
     width: 500px;
     height: 300px;
+    max-width: 95vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -667,6 +663,12 @@ header {
 
 #body-cont-three {
     user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
 }
 
 #body-cont-three .painel-oc .limpar {
@@ -691,7 +693,7 @@ header {
 #body-cont-three .painel-oc .limpar button:hover {
     cursor: pointer;
     background-color: rgb(0, 44, 59);
-    color: lightblue;
+    color: white;
 }
 
 #body-cont-three .painel-oc .limpar .l {
@@ -700,5 +702,51 @@ header {
     justify-content: right;
     width: 100%;
     max-width: 450px;
+}
+
+@media (min-width: 300px) and (max-width: 351px) {
+    #body-cont-one .cont-one-card {
+        zoom: 0.4;
+    }
+
+    #body-cont-two, #body-cont-two .footer-li {
+        font-size: xx-small !important;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 451px) {
+    #body-cont-one .cont-one-card {
+        zoom: 0.5;
+    }
+
+    #body-cont-two, #body-cont-two .footer-li {
+        font-size: x-small !important;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 551px) {
+    #body-cont-one .cont-one-card {
+        zoom: 0.65;
+    }
+
+    #body-cont-two, #body-cont-two .footer-li {
+        font-size: small !important;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 651px) {
+    #body-cont-one .cont-one-card {
+        zoom: 0.8;
+    }
+
+    #body-cont-two, #body-cont-two .footer-li {
+        font-size: small !important;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 751px) {
+    #body-cont-one .cont-one-card {
+        zoom: 0.9;
+    }
 }
 
