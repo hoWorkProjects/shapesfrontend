@@ -272,7 +272,6 @@ header {
     max-width: 90vw;
     width: 700px;
     flex-wrap: wrap;
-    animation: aparecerCima 0.5s ease 1s both;
 }
 
 #body-cont-two .gen li {
@@ -368,14 +367,6 @@ header {
 
 #body-cont-two .gen li .body-li .sel i {
     margin: 0 10px 0 0;
-}
-
-@keyframes aparecerCima {
-    from {
-        transform: translateY(150%);
-    } to {
-        transform: translateY(0);
-    }
 }
 
 #c1fv::before {
