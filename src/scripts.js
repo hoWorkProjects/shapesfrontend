@@ -213,7 +213,7 @@ async function Compact() {
     files.forEach(f => formData.append('arquivos[]', f, f.name));
 
     try {
-        const res = await fetch('https://2657354a00ff.ngrok-free.app/compact', {
+        const res = await fetch('https://backendlbr.onrender.com/compact', {
             method: 'POST',
             body: formData
         });
@@ -242,7 +242,7 @@ async function Formatar() {
     files.forEach(f => formData.append('arquivos[]', f, f.name));
 
     try {
-        const res = await fetch('https://2657354a00ff.ngrok-free.app/formatar', {
+        const res = await fetch('https://backendlbr.onrender.com/formatar', {
             method: 'POST',
             body: formData
         });
