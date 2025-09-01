@@ -155,7 +155,7 @@ async function Visible() {
     files.forEach(f => formData.append('arquivos[]', f, f.name));
 
     try {
-        const res = await fetch('http://localhost:3000/visible', {
+        const res = await fetch('https://backendlbr.onrender.com/visible', {
             method: 'POST',
             body: formData
         });
@@ -184,7 +184,7 @@ async function Modify() {
     files.forEach(f => formData.append('arquivos[]', f, f.name));
 
     try {
-        const res = await fetch('http://localhost:3000/modify', {
+        const res = await fetch('https://backendlbr.onrender.com/modify', {
             method: 'POST',
             body: formData
         });
@@ -213,7 +213,7 @@ async function Compact() {
     files.forEach(f => formData.append('arquivos[]', f, f.name));
 
     try {
-        const res = await fetch('http://localhost:3000/compact', {
+        const res = await fetch('https://backendlbr.onrender.com/compact', {
             method: 'POST',
             body: formData
         });
@@ -242,7 +242,7 @@ async function Formatar() {
     files.forEach(f => formData.append('arquivos[]', f, f.name));
 
     try {
-        const res = await fetch('http://localhost:3000/formatar', {
+        const res = await fetch('https://backendlbr.onrender.com/formatar', {
             method: 'POST',
             body: formData
         });
