@@ -398,18 +398,18 @@ header {
     gap: 5px;
     margin: 0 0 10px 0;
 }
-/* Chrome, Edge, Safari */
+
 #c1fv::-webkit-scrollbar {
-    width: 15px; /* largura da barra */
+    width: 15px;
 }
 
 #c1fv::-webkit-scrollbar-track {
-    background: rgb(0,25,10);
+    background: rgb(0, 44, 59);
 }
 
 #c1fv::-webkit-scrollbar-thumb {
-    background-color: rgb(200,255,200);
-    border: 5px solid rgb(0,25,10);
+    background-color: lightblue;
+    border: 5px solid rgb(0, 44, 59);
 }
 #c1fvt {
     display: flex;
