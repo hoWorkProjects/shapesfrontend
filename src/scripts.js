@@ -187,7 +187,7 @@ async function Executar(type) {
     formData.append('targetKb', inputOc.value);
 
     try {
-        const res = await fetch(`http://localhost:3000/${type}`, {
+        const res = await fetch(`https://shapesbackend.onrender.com/${type}`, {
             method: 'POST',
             body: formData
         });
@@ -228,7 +228,7 @@ async function Ext() {
     files.forEach(f => formData.append('arquivos[]', f, f.name));
 
     try {
-        const res = await fetch('http://localhost:3000/extract', {
+        const res = await fetch('https://shapesbackend.onrender.com/extract', {
             method: 'POST',
             body: formData
         });
