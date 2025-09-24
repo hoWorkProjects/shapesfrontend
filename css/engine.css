@@ -1,0 +1,413 @@
+
+#c1fv::before {
+    content: '';
+    display: block;
+    height: 20px;
+    flex-shrink: 0;
+}
+#c1fv::after {
+    content: '';
+    display: block;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+#c1fv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 20px;
+    height: 180px;
+    box-sizing: border-box;
+    border: 2px dashed rgb(0, 44, 59);
+    gap: 5px;
+    margin: 0 0 10px 0;
+}
+
+#c1fv::-webkit-scrollbar {
+    width: 15px;
+}
+
+#c1fv::-webkit-scrollbar-track {
+    background: rgb(0, 44, 59);
+}
+
+#c1fv::-webkit-scrollbar-thumb {
+    background-color: lightblue;
+    border: 5px solid rgb(0, 44, 59);
+    cursor: pointer;
+}
+#c1fvt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    height: 180px;
+    margin: 10px 0;
+    font-size: large;
+    font-family: 'Open-sans', sans-serif;
+    font-weight: 400;
+    color: rgb(0, 44, 59);
+}
+
+#c1fvt span {
+    font-size: small;
+}
+
+#c1fvt i {
+    margin: 10px;
+    font-size: xx-large;
+}
+
+#c1fs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 450px;
+    border: none;
+    margin: 0;
+    padding: 4px 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(0, 44, 59);
+    border: 1px solid rgb(0, 44, 59);
+    transition: all 0.5s ease;
+    background: none;
+    font-size: large;
+}
+
+#c1fs:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 44, 59);
+}
+
+.c1fvdocument {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    flex-shrink: 0;
+    position: relative;
+    font-size: large;
+    height: 35px;
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid rgb(0, 44, 59);
+}
+
+.c1fvdocument i:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    width: 35px;
+    height: 35px;
+}
+.c1fvdocument i:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    background: none;
+    color: rgb(0, 44, 59);
+    border-left: 1px solid rgb(0, 44, 59);
+    width: 35px;
+    height: 35px;
+    transition: all 0.5s ease;
+}
+
+.c1fvdocument i:nth-child(2):hover {
+    cursor: pointer;
+    background-color: rgb(0, 44, 59);
+    color: white;
+}
+
+
+#body-cont-four .painel-oc .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 30px 0 5px 0;
+}
+
+
+#body-cont-four .painel-oc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+}
+
+#body-cont-four .painel-oc .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 5;
+    top: 0%;
+}
+
+#body-cont-four .painel-oc .buttons li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    color: lightblue;
+    margin: 3px 0;
+    border: 1px solid lightblue;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: large;
+    font-weight: 400;
+    list-style: none;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+
+#body-cont-four .painel-oc .buttons li:hover {
+    cursor: pointer;
+    color: rgb(0, 44, 59);
+    background-color: lightblue;
+}
+
+#body-cont-four .painel-oc .buttons ul {
+    width: 500px;
+    height: 300px;
+    max-width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 44, 59);
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#body-cont-four .painel-oc .buttons i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    color: lightblue;
+    background-color: rgb(0, 44, 59);
+    border-radius: 4px;
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+#body-cont-four .painel-oc .buttons i:hover {
+    cursor: pointer;
+    color: rgb(0, 44, 59);
+    background-color: lightblue;
+}
+
+#body-cont-four {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+#body-cont-four .painel-oc .limpar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#body-cont-four .painel-oc .limpar button {
+    border: 1px solid rgb(0, 44, 59);
+    color: rgb(0, 44, 59);
+    background: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    width: 50%;
+    padding: 3px 20px;
+    font-size: large;
+    transition: all 0.5s ease;
+}
+
+#body-cont-four .painel-oc .limpar button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 44, 59);
+    color: white;
+}
+
+#body-cont-four .painel-oc .limpar .l {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    max-width: 450px;
+}
+
+#body-cont-four, #body-cont-five {
+    user-select: none;
+}
+
+#body-cont-four .oc-config-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(100% - 40px);
+    padding: 20px;
+    margin: 0;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+}
+
+#body-cont-four .oc-config-one .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+}
+
+#body-cont-four .oc-config-one .header h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: large;
+    width: 100%;
+    max-width: 410px;
+    margin: 20px 0;
+    padding: 4px 20px;
+    color: lightblue;
+    background-color: rgb(0, 44, 59);
+    border: 1px solid rgb(0, 44, 59);
+}
+
+#body-cont-four .oc-config-one .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+}
+
+#body-cont-four .oc-config-one .body .line {
+    width: 100%;
+    max-width: 450px;
+    height: 10px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    border-radius: 5px;
+    background-color: rgb(0, 44, 59);
+    position: relative;
+}
+
+#body-cont-four .oc-config-one .body .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -5px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: rgb(0, 85, 116);
+    cursor: pointer;
+}
+
+#body-cont-four .oc-config-one .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 55px;
+    height: 30px;
+    border: 1px solid rgb(0, 44, 59);
+    position: relative;
+    transition: all 0.5s ease;
+    background-color: rgb(0, 44, 59);
+}
+
+#body-cont-four .oc-config-one .footer * {
+    color: lightblue;
+    transition: all 0.5s ease;
+}
+
+#body-cont-four .oc-config-one .footer:hover {
+    background-color: rgb(0, 85, 116);
+    border: 1px solid rgb(0, 85, 116);
+}
+
+#body-cont-four .oc-config-one .footer:hover * {
+    color: white;
+}
+
+#body-cont-four .oc-config-one .footer h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 7px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+}
+
+
+#oc1f {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    background: none;
+    font-size: large;
+    padding: 0 10px;
+    width: calc(100% - 20px);
+    height: 35px;
+    position: absolute;
+    text-align: center;
+    right: 7px;
+    border: none;
+    outline: none;
+}
+
+#oc1f:focus {
+    border: none;
+}
+
+#oc1f::-webkit-outer-spin-button,
+#oc1f::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

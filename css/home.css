@@ -1,0 +1,213 @@
+.cont-one-card li h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    color: rgb(0, 44, 59);
+}
+
+.cont-one-card li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-one-card ul {
+    margin: 0;
+    padding: 0;
+}
+
+.cont-one-card {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border: 1px solid rgb(0, 44, 59);
+    box-shadow: 2px 2px 8px black;
+    transition: all 0.5s ease;
+    transform: translateY(-130%);
+}
+
+.cont-one-card.active {
+    transform: translateY(0);
+}
+
+.cont-one-card:hover {
+    background-color: rgb(0, 44, 59);
+    cursor: pointer;
+}
+
+.cont-one-card li:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0%;
+}
+
+.cont-one-card li:nth-child(1) i {
+    color: rgb(0, 44, 59);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+
+.cont-one-card:hover li i, .cont-one-card:hover li h2 {
+    transition: all 0.5s ease;
+}
+
+.cont-one-card:hover li i, .cont-one-card:hover li h2 {
+    color: white;
+}
+
+#cont-one-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+    width: 100%;
+}
+
+#body-cont-one {
+    margin: 30px 0;
+    user-select: none;
+}
+
+#body-cont-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    user-select: none;
+    animation: visibilidade 1s ease 1s both;
+}
+
+@keyframes visibilidade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+#body-cont-two .gen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90vw;
+    width: 700px;
+    flex-wrap: wrap;
+}
+
+#body-cont-two .gen li {
+    list-style: none;
+}
+
+#body-cont-two .gen ul {
+    margin: 0;
+    padding: 0;
+}
+
+#body-cont-two .gen h2 {
+    width: 700px;
+    max-width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(0, 44, 59);
+}
+
+#body-cont-two .gen .title {
+    max-width: 90vw;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 40px;
+    margin: 0 0 20px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    border: 1px solid rgb(0, 44, 59);
+    color: lightblue;
+    background-color: rgb(0, 44, 59);
+}
+
+#body-cont-two .gen .title i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+#body-cont-two .gen li .title-li {
+    height: 35px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 0 20px;
+    flex: 1 1 auto;
+    max-width: 660px;
+    border: 1px solid rgb(0, 44, 59);
+    background-color: rgb(0, 44, 59);
+    color: lightblue;
+}
+
+#body-cont-two .gen li .footer-li {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    margin: 20px 0 40px 0;
+    max-width: 90vw;
+    border: 1px solid rgb(0, 44, 59);
+    color: rgb(0, 44, 59);
+}
+
+#body-cont-two .gen li .body-li .sel {
+    padding: 0 15px;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    color: lightblue;
+    background-color: rgb(0, 72, 99);
+    display: inline-block;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+#body-cont-two .gen li .body-li .sel i {
+    margin: 0 10px 0 0;
+}

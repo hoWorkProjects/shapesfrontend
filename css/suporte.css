@@ -1,0 +1,167 @@
+#body-cont-three {
+    user-select: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#body-cont-three .sup {
+    width: 100%;
+    max-width: calc(100% - 20px);
+    margin: 0;
+    padding: 0;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#body-cont-three .sup .name, #body-cont-three .sup .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    max-width: 100%;
+    border: 1px solid rgb(0, 44, 59);
+    height: 35px;
+}
+
+#body-cont-three .sup .name i, #body-cont-three .sup .contact i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(0, 44, 59);
+    color: lightblue;
+    border-left: 1px solid rgb(0, 44, 59);
+}
+
+#body-cont-three .sup .name input, #body-cont-three .sup .contact input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 44, 59);
+    width: 100%;
+    height: 35px;
+    padding: 0 10px;
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+#body-cont-three .sup .name input:focus, #body-cont-three .sup .contact input:focus {
+    color: lightblue;
+    background-color: rgba(0, 44, 59, 0.4);
+}
+
+#body-cont-three .sup .name input:hover, #body-cont-three .sup .contact input:hover {
+    color: white;
+    background-color: rgba(0, 44, 59, 0.4);
+}
+
+#body-cont-three .sup .name input::placeholder, #body-cont-three .sup .contact input::placeholder {
+    color: rgb(0, 44, 59);
+    font-size: small;
+    transition: all 0.5s ease;
+}
+
+#body-cont-three .sup .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid;
+}
+
+#body-cont-three .sup .text textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    resize: none;
+    transition: all 0.5s ease;
+}
+
+#body-cont-three .sup .text textarea:focus {
+    color: lightblue;
+    background-color: rgba(0, 44, 59, 0.4);
+}
+
+#body-cont-three .sup .text textarea:hover {
+    color: white;
+    background-color: rgba(0, 44, 59, 0.4);
+}
+
+#body-cont-three .sup .text textarea::placeholder {
+    color: rgb(0, 44, 59);
+    font-size: small;
+    transition: all 0.5s ease;
+}
+
+#body-cont-three .sup .text textarea::-webkit-scrollbar {
+    width: 15px;
+}
+
+#body-cont-three .sup .text textarea::-webkit-scrollbar-track {
+    background-color: rgb(0, 85, 116);
+}
+
+#body-cont-three .sup .text textarea::-webkit-scrollbar-thumb {
+    background-color: lightblue;
+    border: 5px solid rgb(0, 85, 116);
+    cursor: pointer;
+}
+
+#send-sup {
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    margin: 10px 0;
+    padding: 0 24px 0 0;
+    border: none;
+    outline: none;
+    background: none;
+    border: 1px solid rgb(0, 44, 59);
+    color: rgb(0, 44, 59);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 35px;
+    transition: all 0.5s ease;
+}
+
+#send-sup i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    right: 0%;
+    transition: all 0.5s ease;
+}
+
+#send-sup:hover {
+    color: white;
+    background-color: rgb(0, 44, 59);
+}

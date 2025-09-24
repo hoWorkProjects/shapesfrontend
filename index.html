@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>itrowsky APIs</title>
-  <link rel="icon" type="image/png" href="pitrowsky.png">
+  <title>hoWork Projects</title>
+  <link rel="icon" type="image/png" href="hoWork-azul-claro-extend.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,11 +20,16 @@
     referrerpolicy="no-referrer" 
   />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/engine.css" />
+  <link rel="stylesheet" href="css/suporte.css" />
+  <link rel="stylesheet" href="css/sobre.css" />
+  <link rel="stylesheet" href="css/media.css" />
 </head>
 <body>
     <header>
         <div id="header-cont-one">
-            <h2 onclick="AtivarHome()">SUPERVISÃO LBR</h2>
+            <img onclick="ativarMenu(home)" src="hoWork-azul-claro-extend.png">
             <div class="menu-btn" id="menu-btn">
               <div class="bar"></div>
               <div class="bar"></div>
@@ -32,10 +37,10 @@
             </div>
         </div>
         <div id="header-cont-two"><ul>
-            <li onclick="AtivarHome();"><i class="fa-solid fa-door-open"></i><h2>HOME</h2></li>
-            <li onclick="AtivarEnginesMenu();"><i class="fa-solid fa-wrench"></i><h2>ENGINES</h2></li>
-            <li onclick="AtivarOcMenu()"><i class="fa-solid fa-bell"></i><h2>OCORRÊNCIAS</h2></li>
-            <li onclick="AtivarRdoMenu();"><i class="fa-solid fa-book"></i><h2>DIÁRIO DE OBRA</h2></li>
+            <li onclick="ativarMenu(home)"><i class="fa-solid fa-door-open"></i><h2>HOME</h2></li>
+            <li onclick="ativarMenu(EnginesMenu); atualizarHandle()"><i class="fa-solid fa-wrench"></i><h2>ENGINES</h2></li>
+            <li onclick="ativarMenu(Suporte)"><i class="fa-solid fa-pen-to-square"></i><h2>SUPORTE</h2></li>
+            <li onclick="ativarMenu(Sobre)"><i class="fa-solid fa-circle-info"></i><h2>SOBRE</h2></li>
         </ul>
       </div>
     </header>
@@ -44,103 +49,195 @@
         <div class="cont-one-card" id="card-one-cont-one">
           <ul>
             <li><i class="fa-solid fa-door-open"></i><h2>HOME</h2></li>
-            <li><h2>Ao selecionar esse ícone no</h2></li>
-            <li><h2>menu inicial, você irá voltar</h2></li>
-            <li><h2>ao início, ou clique no título</h2></li>
-            <li><h2>presente no cabeçalho</h2></li>
+            <li><h2>Clique no título ou</h2></li>
+            <li><h2>em "Home" no menu</h2></li>
+            <li><h2>para voltar até</h2></li>
+            <li><h2>essa página</h2></li>
           </ul>
         </div>
-        <div onclick="AtivarEnginesMenu();" class="cont-one-card" id="card-two-cont-one">
+        <div onclick="ativarMenu(EnginesMenu); atualizarHandle()" class="cont-one-card" id="card-two-cont-one">
           <ul>
             <li><i class="fa-solid fa-wrench"></i><h2>ENGINES</h2></li>
-            <li><h2>Ao selecionar esse ícone no</h2></li>
-            <li><h2>menu inicial, você pode configurar</h2></li>
-            <li><h2>as ações das ferramentas</h2></li>
-            <li><h2>na parte de ocorrências e RDO</h2></li>
+            <li><h2>Ao clicar nessa opção</h2></li>
+            <li><h2>no menu ou na página</h2></li>
+            <li><h2>inicial, você terá o</h2></li>
+            <li><h2>direito de usar a API</h2></li>
           </ul>
         </div>
-        <div onclick="AtivarOcMenu();" class="cont-one-card" id="card-three-cont-one">
-          <li><i class="fa-solid fa-bell"></i><h2>OCORRÊNCIAS</h2></li>
-            <li><h2>Ao selecionar esse ícone no</h2></li>
-            <li><h2>menu inicial, você pode usar</h2></li>
-            <li><h2>ferramentas capazes de reduzir,</h2></li>
-            <li><h2>corrigir ou formatar arquivos</h2></li>
+        <div onclick="ativarMenu(Suporte)" class="cont-one-card" id="card-three-cont-one">
+          <li><i class="fa-solid fa-pen-to-square"></i><h2>SUPORTE</h2></li>
+            <li><h2>Clique em suporte no</h2></li>
+            <li><h2>menu e entre em contato</h2></li>
+            <li><h2>para mais informações,</h2></li>
+            <li><h2>dúvidas ou sugestões</h2></li>
         </div>
-        <div onclick="AtivarRdoMenu();" class="cont-one-card" id="card-four-cont-one">
-          <li><i class="fa-solid fa-book"></i><h2>DIÁRIO DE OBRA</h2></li>
-            <li><h2>Ao selecionar esse ícone no</h2></li>
-            <li><h2>menu inicial, você poderá adicionar</h2></li>
-            <li><h2>informações, verificar ou remover</h2></li>
-            <li><h2>referente ao Diário de Obra</h2></li>
+        <div onclick="ativarMenu(Sobre)" class="cont-one-card" id="card-four-cont-one">
+          <li><i class="fa-solid fa-circle-info"></i><h2>SOBRE</h2></li>
+            <li><h2>Entenda melhor</h2></li>
+            <li><h2>essa ferramenta,</h2></li>
+            <li><h2>leia com atenção</h2></li>
+            <li><h2>antes de usar</h2></li>
         </div>
       </div>
     </div>
     <div id="body-cont-two" class="home">
       <div class="gen">
         <h2 class="title"><i class="fa-regular fa-lightbulb"></i>Descubra todas as ferramentas!</h2>
-        <h2>A partir desta API você pode reescrever arquivos, formatar arquivos corretamente,
-          compactar arquivos, corrigir arquivos, manipular ou até buscar informações de arquivos.
-
-          Vou te mostrar agora um passo a passo de como usar ferramenta por ferramenta:
+        <h2>A partir desta API você poderá reduzir drasticamente o tamanho de arquivos Excel ou de imagens!
+          <br><br>
+          Vou te mostrar agora um passo a passo de como usar cada ferramenta:
           <ul>
             <li>
-              <span class="title-li">Deseja reduzir o tamanho de arquivos Excel?</span>
-              <span class="body-li">Selecione <span class="sel"><i class="fa-solid fa-bell"></i> OCORRÊNCIAS</span> no menu,
-                  clique em <span class="sel">Selecionar arquivos</span>, selecione os arquivos que deseja reduzir o tamanho e depois clique em
-                  <span class="sel">Compactar Arquivos</span>, depois é só esperar e em alguns segundos seu arquivo de 1GB pode virar um arquivo bem menor do que 100MB.
-                  O tempo necessário para que essa ferramenta gere o resultado é cerca de 3 segundos para arquivos de até 50MB,
-                  para arquivos de 1GB, leva cerca de 60 segundos.
-                  <span class="footer-li">Menu > Ocorrências ou Diário de Obra > Selecionar arquivos > Compactar Arquivos</span>
+              <span class="title-li">Deseja reduzir o tamanho de arquivos Excel ou de imagens?</span>
+              <span class="body-li">Selecione <span class="sel"><i class="fa-solid fa-wrench"></i>ENGINES</span> no menu,
+                  clique em <span class="sel">Selecionar arquivos</span> selecione os arquivos que deseja reduzir o tamanho, depois clique em
+                  <span class="sel">Executar</span> e em <span class="sel">Compactar Arquivos</span>
+                  <br><br>
+                  Antes de usar a ferramenta em seus arquivos, por gentileza, leia com bastante atenção as informações sobre a ferramenta.
+                  <br><br>
+                  Acesse o menu <span class="sel"><i class="fa-solid fa-circle-info"></i>Sobre</span> para obter mais informações sobre a ferramenta.
+                  <br><br>
+                  Em caso de dúvidas, você poderá entrar em contato através do menu <span class="sel"><i class="fa-solid fa-pen-to-square"></i>Suporte</span>
+                  <span class="footer-li">Menu > Engines > Selecionar arquivos > Executar > Compactar Arquivos</span>
               </span>
             </li>
             <li>
-              <span class="title-li">Quer formatar as planilhas de ocorrência do SAC?</span>
-              <span class="body-li">Basta selecionar no menu <span class="sel"><i class="fa-solid fa-bell"></i> OCORRÊNCIAS</span> presente no menu
-                  clicar em <span class="sel">Selecionar arquivos</span>, selecionar os arquivos que deseja formatar e clicar em <span class="sel">Formatar Arquivos</span>
-                  <span class="footer-li">Menu > Ocorrências > Selecionar Arquivos > Formatar Arquivos</span>
+              <span class="title-li">Deseja extrair as imagens originais dos arquivos Excel?</span>
+              <span class="body-li">Selecione <span class="sel"><i class="fa-solid fa-wrench"></i>ENGINES</span> no menu,
+                  clique em <span class="sel">Selecionar arquivos</span> selecione os arquivos que deseja reduzir o tamanho, depois clique em
+                  <span class="sel">Executar</span> e em <span class="sel">Extrair Imagens</span>
+                  <br><br>
+                  Antes de usar a ferramenta em seus arquivos, por gentileza, leia com bastante atenção as informações sobre a ferramenta.
+                  <br><br>
+                  Acesse o menu <span class="sel"><i class="fa-solid fa-circle-info"></i>Sobre</span> para obter mais informações sobre a ferramenta.
+                  <br><br>
+                  Em caso de dúvidas, você poderá entrar em contato através do menu <span class="sel"><i class="fa-solid fa-pen-to-square"></i>Suporte</span>
+                  <span class="footer-li">Menu > Engines > Selecionar arquivos > Executar > Extrair Imagens</span>
+              </span>
+            </li>
+            <li>
+              <span class="title-li">Deseja extrair e comprimir as imagens dos arquivos Excel?</span>
+              <span class="body-li">Selecione <span class="sel"><i class="fa-solid fa-wrench"></i>ENGINES</span> no menu,
+                  clique em <span class="sel">Selecionar arquivos</span> selecione os arquivos que deseja reduzir o tamanho, depois clique em
+                  <span class="sel">Executar</span> e em <span class="sel">Extrair e comprimir</span>
+                  <br><br>
+                  Antes de usar a ferramenta em seus arquivos, por gentileza, leia com bastante atenção as informações sobre a ferramenta.
+                  <br><br>
+                  Acesse o menu <span class="sel"><i class="fa-solid fa-circle-info"></i>Sobre</span> para obter mais informações sobre a ferramenta.
+                  <br><br>
+                  Em caso de dúvidas, você poderá entrar em contato através do menu <span class="sel"><i class="fa-solid fa-pen-to-square"></i>Suporte</span>
+                  <span class="footer-li">Menu > Engines > Selecionar arquivos > Executar > Extrair e comprimir</span>
               </span>
             </li>
           </ul>
         </h2>
       </div>
     </div>
+    <div id="loading" class="desativado">
+        <div id="ql1"></div>
+        <div id="ql2">Carregando...</div>
+    </div>
     <div id="body-cont-three" class="desativado">
+      <form id="form-sup" class="sup" action="https://formsubmit.co/gustavopitrowsky@gmail.com" method="POST">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+        <input type="hidden" name="_subject" value="📩 Nova mensagem do suporte">
+
+        <div class="name"><input id="name-sup" type="text" name="nome" placeholder="Digite seu nome..." required><i class="fa-solid fa-user"></i></div>
+        <div class="contact"><input id="contact-sup" type="text" name="contato" placeholder="Digite um meio de contato..." required><i class="fa-solid fa-envelope"></i></div>
+        <div class="text"><textarea id="text-sup" type="text" name="mensagem" placeholder="Digite sua dúvida..." required></textarea></div>
+        <button id="send-sup" type="submit">Enviar<i class="fa-regular fa-paper-plane"></i></button>
+      </form>
+    </div>
+    <div id="body-cont-four" class="desativado">
       <div class="painel-oc">
         <div class="body">
-          <div id="c1fv"><a id="c1fvt">Nenhum arquivo selecionado</a></div>
-            <button id="c1fs" type="submit" onclick="document.getElementById('c1fvi').click()">Selecionar arquivos...</button>
-            <input type="file" id="c1fvi" accept=".xls,.xlsx,.xlsm,.xlsb" multiple style="display:none">
+          <div id="c1fv"><a id="c1fvt"><i class="fa-regular fa-file-lines"></i>Arraste e solte seus arquivos aqui<span>ou selecione seus arquivos</span></a></div>
+            <button id="c1fs" type="submit" onclick="document.getElementById('c1fvi').click()">Selecionar arquivos</button>
+            <input type="file" id="c1fvi" accept=".xlsx,.jpg,.jpeg,.jfif,.jpe,.png,.webp,.avif,.tif,.tiff,.gif,.svg,.heic,.heif" multiple style="display:none">
           </div>
           <div class="limpar">
             <div class="l">
+              <button onclick="AbrirEngine()">EXECUTAR</button>
               <button onclick="clearInputFiles()">Limpar tudo</button>
             </div>
           </div>
         <div class="buttons desativado">
           <ul>
-            <i onclick="FecharButtons();" class="fa-solid fa-xmark"></i>
-            <li onclick="Compact();">
+            <i onclick="FecharEngine();" class="fa-solid fa-xmark"></i>
+            <li onclick="Executar('compact');">
               Compactar Arquivos
             </li>
-            <li onclick="Formatar();">
+            <li onclick="Executar('formatar');" style="display: none;">
               Formatar Arquivos
+            </li>
+            <li onclick="Ext();">
+              Extrair Imagens
+            </li>
+            <li onclick="Executar('extandcomp');">
+              Extrair e comprimir
+            </li>
+            <li onclick="Executar('retornos');" style="display: none;">
+              Extrair retornos
             </li>
           </ul>
         </div>
       </div>
-    </div>
-    <div id="loading" class="desativado">
-        <div id="ql1"></div>
-        <div id="ql2">Carregando...</div>
-    </div>
-    <div id="body-cont-four" class="desativado">
-      <div class="engine indisponivel">
-        <h2>Esse menu está em manutenção no momento.</h2>
+      <div class="oc-config-one">
+        <div class="header">
+          <h2>NÍVEL DE COMPRESSÃO</h2>
+        </div>
+        <div class="body">
+          <div class="line"><div class="circle"></div></div>
+        </div>
+        <div class="footer">
+          <input type="number" id="oc1f" value="35" min="0" max="100">
+          <h2>%</h2>
+        </div>
       </div>
     </div>
     <div id="body-cont-five" class="desativado">
-      <div class="RDO indisponivel">
-        <h2>Esse menu está em manutenção no momento.</h2>
+      <div class="gen">
+        <h2>
+          <ul>
+            <li>
+                <span class="title-li">Sobre a ferramenta</span>
+                <span class="body-li">
+                    A ferramenta não possuiria limites se estivesse comportada em um servidor local, porém, como a ferramenta está na nuvem, o tamanho máximo por requisição é de <span class="sel"><i class="fa-solid fa-file"></i>500MB</span>
+                    <br><br>
+                    A ferramenta suporta os arquivos Excel que possuem a extensão <span class="sel"><i class="fa-solid fa-file-excel"></i>.xlsx</span> e fotos que possuem as extensões <span class="sel"><i class="fa-solid fa-file"></i>.jpg</span>
+                    <span class="sel"><i class="fa-solid fa-file"></i>.jpeg</span>
+                    <span class="sel"><i class="fa-solid fa-file"></i>.jfif</span>
+                    <span class="sel"><i class="fa-solid fa-file"></i>.jpe</span>
+                    <span class="sel"><i class="fa-solid fa-file"></i>.png</span>
+                    <span class="sel"><i class="fa-solid fa-file"></i>.webp</span>
+                    <span class="sel"><i class="fa-solid fa-file"></i>.avif</span>
+                    <span class="sel"><i class="fa-solid fa-file"></i>.tif</span>
+                    <span class="sel"><i class="fa-solid fa-file"></i>.tiff</span>
+                    <span class="sel"><i class="fa-solid fa-file"></i>.gif</span>
+                    <span class="sel"><i class="fa-solid fa-file"></i>.svg</span>
+                    <span class="sel"><i class="fa-solid fa-file"></i>.heic</span>
+                    <span class="sel"><i class="fa-solid fa-file"></i>.heif</span>
+                    <br><br>
+                    Em média, <span class="sel"><i class="fa-solid fa-percent"></i>35% de compressão</span> é o suficiente para reduzir o arquivo sem perder nenhuma qualidade visual.
+                    Alguns arquivos podem perder até <span class="sel"><i class="fa-solid fa-chart-simple"></i>cem vezes</span> o seu peso e ainda manter sua qualidade visual original.
+                    <br><br>
+                    O tempo para o processamento de cada requisição deve levar no máximo <span class="sel"><i class="fa-solid fa-clock"></i>60 segundos</span>, se passar disso, isso significa que a API foi limitada pelo local na qual ela está hospedada.
+                    <br><br>
+                    Não use a ferramenta com arquivos Excel que possuem imagens soltas (shapes) que não estão fixos a alguma célula ou célula mesclada, como por exemplo, imagens que estão entre duas ou mais células de forma completamente irregular em relação as células, ou seja, a imagem e a célula não possuem nenhuma relação.
+                    <br><br>
+                    A ferramenta, para arquivos Excel, não consegue lidar com arquivos em outro formato que não seja exatamente a extensão <span class="sel"><i class="fa-solid fa-file-excel"></i>.xlsx</span>, a ferramenta foi limitada para lidar apenas com esse tipo de arquivo, para não corromper o arquivo ou perder dados.
+                    <br><br>
+                    O nível de compressão funciona de maneira exponencial, quanto mais você aumenta o nível, muitas vezes mais ele vai compactar o arquivo. 
+                    <br><br>
+                    Nem para todos os arquivos com o nível de compressão selecionado vai diminuir da mesma maneira, para alguns arquivos:
+                    <br>
+                    <span class="sel"><i class="fa-solid fa-chart-simple"></i>35% de compressão já é o suficiente para reduzir vinte vezes o seu peso</span> enquanto para outros, pouca compressão pode nem reduzir o tamanho.
+                </span>
+                <span class="footer-li">Leia com atenção para usar a ferramenta corretamente!</span>
+              </li>
+          </ul>
+        </h2>
       </div>
     </div>
   <script src="src/scripts.js" defer></script>

@@ -1,0 +1,71 @@
+@media (min-width: 300px) and (max-width: 351px) {
+    #body-cont-one .cont-one-card {
+        zoom: 0.4;
+    }
+
+    #body-cont-two, #body-cont-two .footer-li, #body-cont-five, #body-cont-five .footer-li {
+        font-size: xx-small !important;
+    }
+    #body-cont-two .title-li {
+        font-size: x-small !important;
+    }
+
+    #c1fvt {
+        font-size: small !important;
+    }
+    #c1fvt span {
+        font-size: x-small !important;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 451px) {
+    #body-cont-one .cont-one-card {
+        zoom: 0.5;
+    }
+
+    #body-cont-two, #body-cont-two .footer-li, #body-cont-five, #body-cont-five .footer-li {
+        font-size: x-small !important;
+    }
+    #body-cont-two .title-li {
+        font-size: small !important;
+    }
+
+    #c1fvt {
+        font-size: medium !important;
+    }
+    #c1fvt span {
+        font-size: small !important;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 551px) {
+    #body-cont-one .cont-one-card {
+        zoom: 0.65;
+    }
+
+    #body-cont-two, #body-cont-two .footer-li, #body-cont-five, #body-cont-five .footer-li {
+        font-size: small !important;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 651px) {
+    #body-cont-one .cont-one-card {
+        zoom: 0.8;
+    }
+
+    #body-cont-two, #body-cont-two .footer-li, #body-cont-five, #body-cont-five .footer-li {
+        font-size: small !important;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 751px) {
+    #body-cont-one .cont-one-card {
+        zoom: 0.9;
+    }
+}
+
+@media (min-width: 1000px) {
+    #body-cont-three .sup {
+        zoom: 1.2;
+    }
+}
