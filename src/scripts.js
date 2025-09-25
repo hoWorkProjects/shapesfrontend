@@ -206,12 +206,16 @@ async function Executar(type) {
 
         const blob = await res.blob();
         const url = window.URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `${tipo}.zip`;
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
+        if (/iP(hone|ad|od)/.test(navigator.userAgent)) {
+            window.open(url, '_blank');
+        } else {
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${tipo}.zip`;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+        }
         window.URL.revokeObjectURL(url);
     } finally {
         loading();
@@ -235,12 +239,16 @@ async function Ext() {
 
         const blob = await res.blob();
         const url = window.URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'Imagens extraídas.zip';
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
+        if (/iP(hone|ad|od)/.test(navigator.userAgent)) {
+            window.open(url, '_blank');
+        } else {
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${tipo}.zip`;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+        }
         window.URL.revokeObjectURL(url);
     } finally {
         loading();
