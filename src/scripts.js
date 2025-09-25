@@ -285,13 +285,16 @@ function ativarMenu(ativo) {
         if (!o.classList.contains('desativado')) o.classList.add('desativado');
     });
 
-    if (menuBtn.classList.contains('active')) menuBtn.click();
     if (ativo === home) {
         CardsEntryAnimation();
     } else {
         CardsOffAnimation();
     }
 }
+
+window.addEventListener('click', () => {
+    if (menuBtn.classList.contains('active')) menuBtn.click();
+});
 
 function FecharEngine() {
     const painel = document.querySelector('#body-cont-four .painel-oc .buttons');
