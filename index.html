@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+  font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+  ">
   <title>hoWork Projects</title>
   <link rel="icon" type="image/png" href="hoWork-azul-claro-extend.png">
 
@@ -16,6 +21,7 @@
   <link 
     rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" 
     referrerpolicy="no-referrer" 
   />
@@ -140,12 +146,13 @@
     <div id="body-cont-three" class="desativado">
       <form id="form-sup" class="sup" action="https://formsubmit.co/gustavopitrowsky@gmail.com" method="POST">
         <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+        <input type="hidden" name="_next" value="https://howorkprojects.github.io/shapesfrontend/">
         <input type="hidden" name="_subject" value="📩 Nova mensagem do suporte">
+        <input type="hidden" name="_captcha" value="false">
 
         <div class="name"><input id="name-sup" type="text" name="nome" placeholder="Digite seu nome..." required><i class="fa-solid fa-user"></i></div>
         <div class="contact"><input id="contact-sup" type="text" name="contato" placeholder="Digite um meio de contato..." required><i class="fa-solid fa-envelope"></i></div>
-        <div class="text"><textarea id="text-sup" type="text" name="mensagem" placeholder="Digite sua dúvida..." required></textarea></div>
+        <div class="text"><textarea id="text-sup" name="mensagem" placeholder="Digite sua dúvida..." required></textarea></div>
         <button id="send-sup" type="submit">Enviar<i class="fa-regular fa-paper-plane"></i></button>
       </form>
     </div>
