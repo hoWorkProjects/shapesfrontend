@@ -207,7 +207,7 @@ async function Executar(type) {
         const blob = await res.blob();
         const url = window.URL.createObjectURL(blob);
         if (/iP(hone|ad|od)/.test(navigator.userAgent)) {
-            window.open(url, '_blank');
+            location.href = url;
         } else {
             const a = document.createElement('a');
             a.href = url;
@@ -240,7 +240,7 @@ async function Ext() {
         const blob = await res.blob();
         const url = window.URL.createObjectURL(blob);
         if (/iP(hone|ad|od)/.test(navigator.userAgent)) {
-            window.open(url, '_blank');
+            location.href = url;
         } else {
             const a = document.createElement('a');
             a.href = url;
