@@ -383,7 +383,7 @@ const formSup = document.getElementById('form-sup');
 const contactSup = document.getElementById('contact-sup');
 
 formSup.addEventListener('submit', function(event) {
-  const valor = input.value;
+  const valor = contactSup.value;
 
   const temArroba = valor.includes('@');
   const temNumero = /\d/.test(valor);
