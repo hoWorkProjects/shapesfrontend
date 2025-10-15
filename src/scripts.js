@@ -244,7 +244,7 @@ async function Ext() {
         } else {
             const a = document.createElement('a');
             a.href = url;
-            a.download = `${tipo}.zip`;
+            a.download = `Imagens Extraídas.zip`;
             document.body.appendChild(a);
             a.click();
             a.remove();
